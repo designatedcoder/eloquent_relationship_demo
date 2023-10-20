@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    /**
+     *  ONE TO ONE
+     */
+    /////// USER HAS ONE CHARACTER
+    // $user = User::create([
+    //     'name' => fake()->name(),
+    //     'email' => fake()->unique()->safeEmail(),
+    //     'password' => Hash::make('password'), // password
+    // ]);
+
+    // $user->character()->create([
+    //     'username' => fake()->userName()
+    // ]);
+
+    // return view('welcome', [
+    //     'user' => $user
+    // ]);
+
+    /////// CHARACTER BELONGS TO USER
+    // $user = User::find(1);
+    // $character = $user->character;
+    // return view('welcome', [
+    //     'user' => $user,
+    //     'character' => $character
+    // ]);
 });
