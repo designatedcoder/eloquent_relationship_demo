@@ -36,6 +36,25 @@
                         <p>{{ $character->user->name }}</p>
                     </div>
                 </div> --}}
+
+                {{-- <h3 class="text-xl text-center italic my-4">One to Many</h3>
+
+                <div class="flex flex-col space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            User's messages:
+                        </p>
+                        @foreach ($user->messages as $message)
+                            <p>{{ $message->id }}) {{ $message->body }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Message User's Name:
+                        </p>
+                        <p>{{ $message->user->name }}</p>
+                    </div>
+                </div> --}}
             </div>
         </div>
     </body>

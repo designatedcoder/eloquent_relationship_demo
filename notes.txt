@@ -1,3 +1,7 @@
 #### 1 to 1 belongs to/ has one
 # user have one character
 # character will belong to user
+
+#### one to many belongs to/ has many messages
+# user has many messages
+many messages belong to user
