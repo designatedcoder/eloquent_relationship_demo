@@ -4,4 +4,8 @@
 
 #### one to many belongs to/ has many messages
 # user has many messages
-many messages belong to user
+#many messages belong to user
+
+#### many to many / belongs to many
+# stuff belongs to many gifts
+# gifts belongs to many stuffs

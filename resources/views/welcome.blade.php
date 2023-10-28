@@ -55,6 +55,46 @@
                         <p>{{ $message->user->name }}</p>
                     </div>
                 </div> --}}
+
+                {{-- <h3 class="text-xl text-center italic my-4">Belongs to Many</h3>
+
+                <div class="flex flex-col space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Gift 1's stuff:
+                        </p>
+                        @foreach ($firstGifts as $first)
+                            <p>{{ $first->id }}) {{ $first->name }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Gift 2's stuff:
+                        </p>
+                        @foreach ($secondGifts as $second)
+                            <p>{{ $second->id }}) {{ $second->name }}</p>
+                        @endforeach
+                    </div>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Stuff 1's Gifts:
+                        </p>
+                        @foreach ($firstStuffs as $first)
+                            <p>{{ $first->id }}) {{ $first->type }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Stuff 2's Gifts:
+                        </p>
+                        @foreach ($secondStuffs as $second)
+                            <p>{{ $second->id }}) {{ $second->type }}</p>
+                        @endforeach
+                    </div>
+                </div> --}}
             </div>
         </div>
     </body>
