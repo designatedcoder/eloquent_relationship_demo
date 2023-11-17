@@ -95,6 +95,39 @@
                         @endforeach
                     </div>
                 </div> --}}
+
+
+                {{-- <h3 class="text-xl text-center italic my-4">HAS ONE THROUGH/ HAS MANY THROUGH</h3> --}}
+
+                {{-- <div class="flex flex-col space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            User's Gifts:
+                        </p>
+                        @foreach ($gifts as $gift)
+                            <p>{{ $gift->id }}) {{ $gift->type }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Gift's User Name:
+                        </p>
+                        @foreach ($userGifts as $gift)
+                            <p>{{ $gift->user->id }}) {{ $gift->user->name }}</p>
+                        @endforeach
+                    </div>
+                </div> --}}
+
+                {{-- <div class="flex flex-col space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            User's Stuff:
+                        </p>
+                        @foreach ($stuffs as $stuff)
+                            <p>{{ $stuff->id }}) {{ $stuff->name }}</p>
+                        @endforeach
+                    </div>
+                </div> --}}
             </div>
         </div>
     </body>

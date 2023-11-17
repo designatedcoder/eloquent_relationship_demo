@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('gifts', function (Blueprint $table) {
             $table->id();
             $table->string('type');
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

@@ -9,3 +9,9 @@
 #### many to many / belongs to many
 # stuff belongs to many gifts
 # gifts belongs to many stuffs
+
+#### has one through/ has many through
+# user has many gifts
+# gifts belongs to a user
+# gifts has many stuffs
+# user has many stuffs through gifts
