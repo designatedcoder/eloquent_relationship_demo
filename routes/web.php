@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Achievement;
 use App\Models\Gift;
 use App\Models\User;
 use App\Models\Stuff;
@@ -198,4 +199,86 @@ Route::get('/', function () {
     // return view('welcome', [
     //     'stuffs' => $stuffs,
     // ]);
+
+
+
+
+    /**
+     *  POLYMORHIC BELONGS TO MANY
+     */
+    /////// MESSAGES HAVE LIKES
+    // $user1 = User::create([
+    //     'name' => fake()->name(),
+    //     'email' => fake()->unique()->safeEmail(),
+    //     'password' => Hash::make('password'), // password
+    // ]);
+
+    // $user2 = User::create([
+    //     'name' => fake()->name(),
+    //     'email' => fake()->unique()->safeEmail(),
+    //     'password' => Hash::make('password'), // password
+    // ]);
+
+    // $message1 = $user1->messages()->create([
+    //     'body' => fake()->word(),
+    // ]);
+
+    // $message2 = $user1->messages()->create([
+    //     'body' => fake()->word(),
+    // ]);
+
+    // $message1->likes()->create([
+    //     'user_id' => $user1->id,
+    //     'liked' => 1,
+    // ]);
+
+    // $message2->likes()->create([
+    //     'user_id' => $user2->id,
+    //     'liked' => 1,
+    // ]);
+
+
+    /////// ACHIEVEMENTS HAVE LIKES
+    // $user1 = User::create([
+    //     'name' => fake()->name(),
+    //     'email' => fake()->unique()->safeEmail(),
+    //     'password' => Hash::make('password'), // password
+    // ]);
+
+    // $user2 = User::create([
+    //     'name' => fake()->name(),
+    //     'email' => fake()->unique()->safeEmail(),
+    //     'password' => Hash::make('password'), // password
+    // ]);
+
+    // $achievement1 = $user1->achievements()->create([
+    //     'type' => fake()->word(),
+    //     'name' => fake()->word(),
+    // ]);
+
+    // $achievement2 = $user1->achievements()->create([
+    //     'type' => fake()->word(),
+    //     'name' => fake()->word(),
+    // ]);
+
+    // $achievement1->likes()->create([
+    //     'user_id' => $user1->id,
+    //     'liked' => 1,
+    // ]);
+
+    // $achievement2->likes()->create([
+    //     'user_id' => $user2->id,
+    //     'liked' => 1,
+    // ]);
+
+    // $message = Message::find(1);
+    // $achievement = Achievement::find(1);
+    // $messageLikes = $message->likes;
+    // $achievementLikes = $achievement->likes;
+
+    // return view('welcome', [
+    //     'messageLikes' => $messageLikes,
+    //     'achievementLikes' => $achievementLikes,
+    // ]);
+
 });

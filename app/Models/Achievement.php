@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Message extends Model
+class Achievement extends Model
 {
     use HasFactory;
 
@@ -16,7 +16,7 @@ class Message extends Model
      *
      * @var array
      */
-    protected $fillable = ['body'];
+    protected $fillable = ['type', 'name'];
 
     /**
      * Get all of the achievement's likes.
@@ -26,7 +26,7 @@ class Message extends Model
     }
 
     /**
-     * Get the user that owns the Message
+     * Get the user that owns the Like
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

@@ -50,7 +50,7 @@
                     </div>
                     <div class="flex justify-between">
                         <p class="text-green-300">
-                            Message User's Name:
+                            Achievement User's Name:
                         </p>
                         <p>{{ $message->user->name }}</p>
                     </div>
@@ -125,6 +125,65 @@
                         </p>
                         @foreach ($stuffs as $stuff)
                             <p>{{ $stuff->id }}) {{ $stuff->name }}</p>
+                        @endforeach
+                    </div>
+                </div> --}}
+
+
+
+                {{-- <h3 class="text-xl text-center italic my-4">POLYMORPHIC ONE TO MANY</h3>
+
+                <div class="flex flex-col space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Message Likes ID:
+                        </p>
+                        @foreach ($messageLikes as $like)
+                            <p>{{ $like->id }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Message Likes Type:
+                        </p>
+                        @foreach ($messageLikes as $like)
+                            <p>{{ $like->likeable_type }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Message Likes Count:
+                        </p>
+                        @foreach ($messageLikes as $like)
+                            <p>{{ $like->count() }}</p>
+                        @endforeach
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Achievement Likes ID:
+                        </p>
+                        @foreach ($achievementLikes as $like)
+                            <p>{{ $like->id }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Achievement Likes Type:
+                        </p>
+                        @foreach ($achievementLikes as $like)
+                            <p>{{ $like->likeable_type }}</p>
+                        @endforeach
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-green-300">
+                            Achievement Likes Count:
+                        </p>
+                        @foreach ($achievementLikes as $like)
+                            <p>{{ $like->count() }}</p>
                         @endforeach
                     </div>
                 </div> --}}

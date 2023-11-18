@@ -4,7 +4,7 @@
 
 #### one to many belongs to/ has many messages
 # user has many messages
-#many messages belong to user
+# many messages belong to user
 
 #### many to many / belongs to many
 # stuff belongs to many gifts
@@ -15,3 +15,8 @@
 # gifts belongs to a user
 # gifts has many stuffs
 # user has many stuffs through gifts
+
+#### polymorphic one to many
+# likes can morphto messages and or achievements
+# messages have likes
+# achievements have likes

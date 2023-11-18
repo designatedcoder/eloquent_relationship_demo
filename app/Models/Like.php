@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Message extends Model
+class Like extends Model
 {
     use HasFactory;
 
@@ -16,17 +16,17 @@ class Message extends Model
      *
      * @var array
      */
-    protected $fillable = ['body'];
+    protected $fillable = ['user_id', 'liked', 'likeable_id', 'likeable_type'];
 
     /**
-     * Get all of the achievement's likes.
+     * Get the parent likeable model (messages or achievements).
      */
-    public function likes(): MorphMany {
-        return $this->morphMany(Like::class, 'likeable');
+    public function likeable(): MorphTo {
+        return $this->morphTo();
     }
 
     /**
-     * Get the user that owns the Message
+     * Get the user that owns the Like
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
